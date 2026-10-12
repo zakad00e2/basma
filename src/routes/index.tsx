@@ -58,7 +58,7 @@ function Index() {
 
       <section data-reveal className="mx-auto mt-28 max-w-7xl px-4 md:px-8">
         <h2 className="border-b pb-4 font-display text-3xl">{t("shopByColor")}</h2>
-        <div className="mt-8 grid grid-cols-3 gap-3 md:gap-6">
+        <div className="mt-8 grid grid-cols-1 gap-3 md:grid-cols-3 md:gap-6">
           {p.colors.map((c) => (
             <Link key={c.id} to="/collection" search={{ color: c.id }} className="group relative block overflow-hidden">
               <img src={c.images[c.images.length - 1]!.src} alt="" loading="lazy" className="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105" />
